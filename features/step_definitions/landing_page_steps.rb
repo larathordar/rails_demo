@@ -1,5 +1,5 @@
 When("I visit the site") do
-  visit root_path
+  visit '/'
 end
 
 Then("I should see {string}") do |content|
