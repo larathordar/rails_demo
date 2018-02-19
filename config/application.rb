@@ -37,3 +37,4 @@ module RailsDemo
     config.generators.system_tests = nil
   end
 end
+  end
