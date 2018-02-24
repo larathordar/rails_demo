@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
+  resources :high_scores
   root controller: :articles, action: :index
-    resources :articles, only: [:new]
+  rsources :articles, only: [:new]
 
 end
