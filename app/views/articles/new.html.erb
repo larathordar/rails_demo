@@ -1,20 +1,10 @@
-%= form_with scope: :article, local: true do |form| %>
- <p>
-   <%= form.label :title %><br>
-   <%= form.text_field :title %>
- </p>
 
- <p>
-     <%= form.label :author %><br>
-     <%= form.text_fz :author %>
- </p>
+<h1>hello</h1>
+<%= form_for @article do |f| %>
 
- <p>
-   <%= form.label :content %><br>
-   <%= form.text_area :content %>
- </p>
-
- <p>
-   <%= form.submit %>
- </p>
+<%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_area :content %>
+  <%= f.submit %>
 <% end %>

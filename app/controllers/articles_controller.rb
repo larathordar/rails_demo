@@ -9,8 +9,10 @@ class ArticlesController < ApplicationController
   end
 
   def create
-     @articles = Article.create(article_params)
+     @article = Article.create(article_params)
+     @article = Article.save
   end
+
   private
     def article_params
     params[:article].permit(:title, :author, :content)
