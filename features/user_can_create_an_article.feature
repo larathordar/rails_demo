@@ -4,11 +4,11 @@ Feature: Create articles
   I would like to be able to create Articles
 
   Background:
-    Given I visit the "landing page" 
-    When I click "new article" link
+    Given I visit the "landing page"
 
   Scenario: Successfully create an article [Happy Path]
-    When I fill in "Title" with "Learning Rails 5"
+    Given I click "new article" link
+    And I fill in "Title" with "Learning Rails 5"
     And I fill in "Content" with "Excited about learning a new framework"
     And I click "Create Article" button
     Then I should be on "Learning Rails 5" page
