@@ -1,5 +1,5 @@
 Given("I visit the {string} page") do |string|
-  visit '/'
+  visit '/' 
 end
 
 When("I click {string} link") do |string|
