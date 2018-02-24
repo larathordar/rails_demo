@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root controller: :index, action: :index
+  root controller: :landing, action: :index
     resources :articles, only: [:new, :index]
 
 end
