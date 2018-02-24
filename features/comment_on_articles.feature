@@ -10,7 +10,7 @@ Background:
         | Learn Rails 5        | Build awesome rails applications | Faraz  |
 
   Scenario: A visitor can comment on an article
-    Given I visit the "landing" page
+    Given I visit the "landing page" 
     Then I click "comment"
     And I fill in "text field" with "Good stuff"
     And I click "submit"
