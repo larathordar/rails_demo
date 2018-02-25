@@ -5,6 +5,7 @@ Feature: List articles on the landing page
 
   Scenario: View list of articles on the landing page
     Given the following articles exists
+
           | title                | content                          | author |
           | A breaking news item | Some really breaking action      | Thomas |
           | Learn Rails 5        | Build awesome rails applications | Faraz  |
