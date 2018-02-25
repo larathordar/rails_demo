@@ -8,10 +8,11 @@ Background:
         | title                | content                          | author |
         | A breaking news item | Some really breaking action      | Thomas |
         | Learn Rails 5        | Build awesome rails applications | Faraz  |
+  Given I am on the landing page
 
   Scenario: A visitor can comment on an article
-    Given I visit the "landing page" 
-    Then I click "comment"
+    And I click on "Learn Rails 5"
+    And I fill in "email" with "oskar@quad.se"
     And I fill in "text field" with "Good stuff"
     And I click "submit"
-    Then I should see a "Good stuff"
+    Then I should see "Good stuff"
