@@ -4,4 +4,6 @@ class CommentsController < ApplicationController
         Comment.create(email: params[:email],
                        content: params[:content],
                        article: article)
+        redirect_to article_path(article)
     end
+end

@@ -9,8 +9,8 @@ Then("I should be on {string} page") do |article_title|
   expect(page.current_path).to eq "/articles/#{article.id}"
 end
 
-Given("the following articles exists") do |table|
-  table.hashes.each do |article|
-    Article.create!(article)
+Given("the following articles exist") do |table|
+  table.hashes.each do |hash|
+    FactoryBot.create(:article, hash)
   end
 end
